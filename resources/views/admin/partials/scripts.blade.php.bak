@@ -1,0 +1,162 @@
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/js/vendor.bundle.base.js')}}"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="{{ asset('admin_assets/vendors/chart.js/Chart.min.js')}}"></script>
+<!-- End plugin js for this page -->
+<!-- Plugin js for this form element page -->
+<script src="{{ asset('admin_assets/vendors/typeaheadjs/typeahead.bundle.min.js') }}"></script>  
+<script src="{{ asset('admin_assets/vendors/select2/select2.min.js') }}"></script>
+<!-- End plugin js form element page -->
+<!-- Plugin start for datatable-->
+
+<script src="{{ asset('admin_assets/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js') }}"></script>
+
+<script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+
+<!-- date picker  -->
+<script src="{{ asset('admin_assets/vendors/x-editable/bootstrap-editable.min.js')}}"></script>
+<script src="{{ asset('admin_assets/vendors/moment/moment.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.js')}}"></script>
+<script src="{{ asset('admin_assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+<script src="{{ asset('admin_assets/vendors/summernote/dist/summernote-bs4.min.js')}}"></script>
+<!-- date picker end -->
+<!--  -->
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="{{ asset('admin_assets/js/jq.tablesort.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{ asset('admin_assets/vendors/jquery.avgrund/jquery.avgrund.min.js')}}"></script>
+
+
+<script src="{{ asset('admin_assets/js/off-canvas.js') }}"></script>
+<script src="{{ asset('admin_assets/js/hoverable-collapse.js') }}"></script>
+<script src="{{ asset('admin_assets/js/template.js') }}"></script>
+<script src="{{ asset('admin_assets/js/settings.js') }}"></script>
+<script src="{{ asset('admin_assets/js/todolist.js') }}"></script>
+<!-- endinject -->
+<!-- Custom js for form element page page-->
+<script src="{{ asset('admin_assets/js/file-upload.js') }}"></script>
+<script src="{{ asset('admin_assets/js/typeahead.js') }}"></script>
+<script src="{{ asset('admin_assets/js/select2.js') }}"></script>
+<script src="{{ asset('admin_assets/js/alerts.js') }}"></script>
+<script src="{{ asset('admin_assets/js/avgrund.js') }}"></script>
+
+<!-- End custom js for form element page page-->
+<!-- Custom js for this page-->
+<script src="{{ asset('admin_assets/js/dashboard.js') }}"></script>
+<!-- Custom js for this page-->
+<script src="{{ asset('admin_assets/js/data-table.js') }}"></script>
+<!-- End custom js for this page-->
+<!-- Custom js for this tabs-->
+<script src="{{asset('admin_assets/js/tabs.js')}}"></script>
+<!-- End custom js for tabs-->
+<script src="{{ asset('admin_assets/vendors/jquery-bar-rating/jquery.barrating.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/dropify/dropify.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/jquery-file-upload/jquery.uploadfile.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/jquery-tags-input/jquery.tagsinput.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/jquery.repeater/jquery.repeater.min.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/inputmask/jquery.inputmask.bundle.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/dropzone/dropzone.js') }}"></script>
+<script src="{{ asset('admin_assets/vendors/multiselect-lists/jquery.multi-select.js') }}"></script>
+<!-- Custom js for this page-->
+<script src="{{ asset('admin_assets/js/formpickers.js') }}"></script>
+<script src="{{ asset('admin_assets/js/form-addons.js') }}"></script>
+<script src="{{ asset('admin_assets/js/x-editable.js') }}"></script>
+<script src="{{ asset('admin_assets/js/dropify.js') }}"></script>
+<script src="{{ asset('admin_assets/js/dropzone.js') }}"></script>
+<script src="{{ asset('admin_assets/js/jquery-file-upload.js') }}"></script>
+<script src="{{ asset('admin_assets/js/formpickers.js') }}"></script>
+<script src="{{ asset('admin_assets/js/form-repeater.js') }}"></script>
+<script src="{{ asset('admin_assets/js/inputmask.js') }}"></script>
+<script src="{{ asset('admin_assets/js/tablesorter.js')}}"></script>
+
+<!-- For jquery Testing Add camera -->
+<script type="text/javascript">
+    var APP_URL = {!! json_encode(url('/')) !!}
+    var USER_ROLE = {!! json_encode(Auth::user()->role_id) !!}
+</script>
+<script src="{{ asset('admin_assets/minutescomponents/minutes-add.js') }}"></script>
+
+<!-- End custom js for this page-->
+
+<!-- To close the success and error emssages after some time after submit forms. --> 
+<script type="text/javascript">
+    $(document).ready(function(){
+     // $(".alert-info").delay(5000).slideUp(300);
+     // $(".alert-success").delay(5000).slideUp(300);
+      //$('table.table').DataTable();
+      $('#subject').summernote({
+        height: "85px"
+      });
+      $('#comments').summernote({
+        height:"85px"
+      });
+      $('#responsibility').summernote({
+        height:"85px"
+      });
+      $('#decisions').summernote({
+        height:"85px"
+      });
+      $('#reply_detail').summernote({
+        height: "150px",
+        placeholder: 'write reply here...'
+      })
+     
+      $('table#record-note-listing').DataTable();
+    /*var table = $('#record-note-listing').DataTable({
+     autoWidth: false,
+     columns : [
+     { width : '50px' },
+     { width : '50px' },
+     { width : '50px' },
+     { width : '50px' } 
+     ] 
+     });*/
+
+      $(".alert-info").delay(4000).slideUp(300);
+      $(".alert-success").delay(4000).slideUp(300);
+      $('table#table_record_report').DataTable({
+          pageLength: '50',
+          order:[]
+      });
+      
+      $("#department_decision_detial_repsort").DataTable({
+        pageLength: '100',
+        "lengthChange": false,
+        order:[],
+		dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'print',
+                text: 'Print all',
+                exportOptions: {
+                    modifier: {
+                        selected: null
+                    }
+                }
+            },
+            {
+                extend: 'print',
+                text: 'Print selected'
+            }
+        ],
+        select: true
+      });
+      
+      $('#search_again').on('submit', function () {
+          var new_segment = '{!! Request::segment(1) !!}';
+          var new_segment1 = '{!! Request::segment(2) !!}';
+          var new_segment2 = '{!! Request::segment(3) !!}';
+          var complete_path = APP_URL + '/' + new_segment + '/' + new_segment1 + '/' + new_segment2 + '/' + $('#department_id').val() + '/' + $('#add_status_dropdown').val();
+  //        alert(complete_path);
+          window.location.href = complete_path;
+          return false;
+      });
+
+});
+</script>
+
