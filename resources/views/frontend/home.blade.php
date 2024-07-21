@@ -73,7 +73,7 @@
             </div>
             <div class="col-lg-7 col-md-12 pl-40 md-pl-15 md-pt-200 sm-pt-0">
                 <div class="sec-title mb-30">
-                    <div class="sub-text">About Us</div>
+                    <div class="sub-text" style="margin-top: 10px;">About Us</div>
                     <!-- <p class="title pb-20">
                                     {!! $about->short_description ?? '' !!}
                                 </p> -->
@@ -91,8 +91,8 @@
                         <div class="rs-skillbar style1">
                             <div class="cl-skill-bar">
                                 <!-- Start Skill Bar -->
-                                @foreach($services as $service)
-                                <span class="skillbar-title">{{ $service?->title }}</span>
+                                @foreach($skills as $skill)
+                                <span class="skillbar-title">{{ $skill?->title }}</span>
                                 <div class="skillbar" data-percent="92">
                                     <p class="skillbar-bar"></p>
                                     <span class="skill-bar-percent"></span>
@@ -126,7 +126,7 @@
             @forelse($projects as $project)
             <div class="project-item">
                 <div class="project-img">
-                    <a href="#"><img src="{{ $project->getImagePath($project->image) }}" alt="images"></a>
+                    <a href="#"><img style="width: 300px; height:300px" src="{{ $project->getImagePath($project->image) }}" alt="images"></a>
                 </div>
                 <div class="project-content">
                     <h3 class="title"><a href="#">{{ $project?->title }}</a></h3>
@@ -141,6 +141,9 @@
 <!-- Project Section End -->
 
 <!-- Services Section Start -->
+@php
+$limitServices = App\Models\Service::limit(6)->get();
+@endphp
 <div class="rs-services main-home gray-color pt-120 pb-120 md-pt-70 md-pb-70">
     <div class="container">
         <div class="sec-title2 text-center mb-45">
@@ -151,7 +154,7 @@
             <div class="heading-line"></div>
         </div>
         <div class="row">
-            @foreach($services as $service)
+            @foreach($limitServices as $service)
             <div class="col-lg-4 col-md-6 mb-25">
                 <div class="services-item">
                     <div class="services-icon">
@@ -166,9 +169,9 @@
                             <h3 class="services-title"><a href="{{ route('service.details', [$service->slug]) }}">{{ $service->title ?? '' }}</a></h3>
                         </div>
                         <div class="services-desc">
-                            @if(isset($service->description))
+                            @if(isset($service->short_description))
                             <p>
-                                {!! Str::limit($service->description ?? '',200) !!}
+                                {!! Str::limit($service->short_description ?? '',200) !!}
                             </p>
                             @endif
                         </div>
@@ -183,76 +186,49 @@
 
 
 
- <!-- Testimonial Section Start -->
- <div class="rs-testimonial main-home gray-color pt-120 pb-120 md-pt-80 md-pb-80">
-                <div class="container">
-                  <div class="sec-title2 text-center mb-45">
-                      <span class="sub-text">Testimonial</span>
-                      <h2 class="title testi-title">
-                         What Saying Our Customers
-                      </h2>
-                      <div class="heading-line">
+<!-- Testimonial Section Start -->
+<div class="rs-testimonial main-home gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="container">
+        <div class="sec-title2 text-center mb-45">
+            <span class="sub-text">Testimonial</span>
+            <h2 class="title testi-title">
+                What Saying Our Customers
+            </h2>
+            <div class="heading-line">
 
-                      </div>
-                  </div>
-                    <div class="rs-carousel owl-carousel" 
-                        data-loop="true" 
-                        data-items="1" 
-                        data-margin="30" 
-                        data-autoplay="true" 
-                        data-hoverpause="true" 
-                        data-autoplay-timeout="5000" 
-                        data-smart-speed="800" 
-                        data-dots="true" 
-                        data-nav="false" 
-                        data-nav-speed="false" 
+            </div>
+        </div>
+        <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="true" data-nav="false" data-nav-speed="false" data-md-device="1" data-md-device-nav="false" data-md-device-dots="true" data-center-mode="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="true" data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="true" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false">
 
-                        data-md-device="1" 
-                        data-md-device-nav="false" 
-                        data-md-device-dots="true" 
-                        data-center-mode="false"
-
-                        data-ipad-device2="1" 
-                        data-ipad-device-nav2="false" 
-                        data-ipad-device-dots2="true"
-
-                        data-ipad-device="1" 
-                        data-ipad-device-nav="false" 
-                        data-ipad-device-dots="true" 
-
-                        data-mobile-device="1" 
-                        data-mobile-device-nav="false" 
-                        data-mobile-device-dots="false">
-                        
-                        @forelse($testimonials as $testimonial)
-                        <div class="testi-item">
-                            <div class="author-desc">   
-                                @if(isset($testimonial->description))                             
-                                <div class="desc"><img class="quote" src="{{ asset('frontend/assets/images/testimonial/main-home/quote2.png') }}" alt="">{!! $testimonial->description ?? '' !!}</div>
-                                @endif
-                                <div class="author-img">
-                                    @if($testimonial->image)
-                                    <img src="{{$testimonial->getImagePath($testimonial->image) }}" alt="">
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">{{ $testimonial->title ?? ''}}</a>
-                            </div>
-                          
-                        </div>  @empty
-                        <div class="author-desc">
-                            <p>No Testimonials</p>
-                        </div>
-                        @endforelse
-                       
-                        
-                        
-                       
+            @forelse($testimonials as $testimonial)
+            <div class="testi-item">
+                <div class="author-desc">
+                    @if(isset($testimonial->description))
+                    <div class="desc"><img class="quote" src="{{ asset('frontend/assets/images/testimonial/main-home/quote2.png') }}" alt="">{!! $testimonial->description ?? '' !!}</div>
+                    @endif
+                    <div class="author-img">
+                        @if($testimonial->image)
+                        <img src="{{$testimonial->getImagePath($testimonial->image) }}" alt="">
+                        @endif
                     </div>
                 </div>
+                <div class="author-part">
+                    <a class="name" href="#">{{ $testimonial->title ?? ''}}</a>
+                </div>
+
+            </div> @empty
+            <div class="author-desc">
+                <p>No Testimonials</p>
             </div>
-            <!-- Testimonial Section End -->
+            @endforelse
+
+
+
+
+        </div>
+    </div>
+</div>
+<!-- Testimonial Section End -->
 
 
 

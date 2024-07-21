@@ -14,7 +14,7 @@ class SettingComposer
      public function compose(View $view): void
      {
         $about = About::first();
-        $services = Service::orderBy('created_at')->get();
+        $services = Service::get();
         $testimonials = Testimonial::orderBy('created_at', 'DESC')->get();
         $projects = Project::active()->get();
         $setting = Setting::first();

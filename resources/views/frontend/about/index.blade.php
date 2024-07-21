@@ -74,7 +74,7 @@
                     <div class="team-wrap">
                         <div class="image-inner">
                             @if(isset($team->image))
-                            <a href="{{ route('team.details',[$team->slug]) }}"><img src="{{ $team->getImagePath($team->image) }}" alt=""></a>
+                            <a href="{{ route('team.details',[$team->slug]) }}"><img style="width: 329px; height: 219px" src="{{ $team->getImagePath($team->image) }}" alt=""></a>
                             @endif
                         </div>
                     </div>

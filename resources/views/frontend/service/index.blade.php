@@ -25,7 +25,7 @@
                             <div class="services-item">
                                 @if(isset($service->logo))
                                 <div class="services-icon">
-                                    <img src="{{ $service->getImagePath($service->logo) }}" alt="">
+                                    <img style="width: 50px; height:50px" src="{{ $service->getImagePath($service->logo) }}" alt="">
                                 </div>
                                 @endif
                                 <div class="services-content">

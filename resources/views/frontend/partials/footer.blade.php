@@ -22,10 +22,13 @@
                         </li>
                     </ul>
                 </div>
+                @php
+            $limitServices = App\Models\Service::limit(5)->get();
+            @endphp
                 <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
                     <h3 class="widget-title">IT Services</h3>
                     <ul class="site-map">
-                        @forelse($services as $service)
+                        @forelse($limitServices as $service)
                         <li><a href="{{ route('service.details', [$service->slug]) }}">{{ $service->title ?? '' }}</a></li>
                         @empty
                         <li>No Service</li>
