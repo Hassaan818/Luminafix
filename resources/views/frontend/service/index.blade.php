@@ -31,7 +31,7 @@
                                 <div class="services-content">
                                     <h2 class="title"><a href="{{ route('service.details', [$service->slug]) }}">{{ $service?->title }}</a></h2>
                                     <p class="desc">
-                                       {{ $service?->short_description}}
+                                       {!! $service?->short_description !!}
                                     </p>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                             <div class="process-wrap bg3">
                                 <div class="sec-title mb-30">
                                     <div class="sub-text new">Working Process</div>
-                                    <h2 class="title white-color">
+                                    <h2 class="title black-color">
                                         Our Working Process -  How We Work For Our Customers
                                     </h2>
                                 </div>

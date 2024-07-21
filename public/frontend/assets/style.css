@@ -215,7 +215,7 @@ body.nav-expanded .offwrap {
   font-weight: 800 !important;
 }
 .gray-color {
-  background-color: #F6F7F9;
+  background-color: #f9f777 ;
 }
 .gray-bg2 {
   background: #f7f9ff;
@@ -308,7 +308,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: lightblue;
+  background-color: #f9f777;
   margin: 0px 31px 0px 0px;
   padding: 80px 40px 75px 40px;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -324,7 +324,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: lightblue;
+  background-color: #f9f777;
 }
 .bg6 {
   background: url(images/bg/project-bg.png);
@@ -337,7 +337,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #000060;
+  background-color: #fde054 ;
 }
 .bg8 {
   background: url(images/bg/call-action.jpg);
@@ -545,10 +545,10 @@ ul.services-list li a:before {
 }
 ul.services-list li a:hover,
 ul.services-list li a.active {
-  background-image: linear-gradient(250deg, #1273eb 19%, #03228f 100%);
+  background-image: linear-gradient(250deg, black 19%, #f9f777  100%);
   color: #ffffff;
   border-radius: 5px;
-  border-color: #1273eb;
+  border-color: black;
 }
 ul.services-list li a:hover:before,
 ul.services-list li a.active:before {
@@ -901,11 +901,12 @@ blockquote cite:before {
 }
 .readon.learn-more {
   padding: 14px 40px 14px 40px;
-  background-image: linear-gradient(250deg, #4e95ed 19%, #03228f 100%);
+  margin-bottom: 4px;
+  background-image: linear-gradient(250deg, rgb(29, 28, 28)  19%, #fde054 100%);
   border-radius: 30px 30px 30px 30px;
 }
 .readon.learn-more:hover {
-  background-image: linear-gradient(180deg, #03228f 19%, #4e95ed 100%);
+  background-image: linear-gradient(180deg, black 19%, rgb(29, 28, 28) 100%);
   color: #ffffff;
 }
 .readon.learn-more.sub-con {
@@ -919,13 +920,13 @@ blockquote cite:before {
   color: #ffffff;
 }
 .readon.learn-more.submit {
-  background-image: linear-gradient(90deg, #03228f 0%, #4e95ed 100%);
+  background-image: linear-gradient(90deg, black 0%, #fde054  100%);
   padding: 16px 40px 16px 40px;
   font-weight: 500;
   font-size: 16px;
 }
 .readon.learn-more.submit:hover {
-  background-image: linear-gradient(200deg, #03228f 0%, #4e95ed 100%);
+  background-image: linear-gradient(200deg, black 0%, black 100%);
   color: #ffffff;
 }
 .readon.learn-more.post {
@@ -1338,7 +1339,7 @@ blockquote cite:before {
   line-height: 1;
   font-weight: 500;
   color: #fff;
-  background-image: linear-gradient(160deg, #03228f 0%, #0b70e1 77%);
+  background-image: linear-gradient(250deg, rgb(29, 28, 28)  19%, #fde054 100%);
   transition: all .3s ease;
   position: relative;
   overflow: hidden;
@@ -1487,7 +1488,7 @@ blockquote cite:before {
 }
 .address-item .address-icon i {
   text-align: center;
-  color: #106eea;
+  color: black;
   border-radius: 100%;
   font-size: 25px;
   position: relative;
@@ -1696,7 +1697,7 @@ blockquote cite:before {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 400;
-  color: #03228F;
+  color: black;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -1706,7 +1707,7 @@ blockquote cite:before {
   border: 0;
   height: 4px;
   width: 50px;
-  background-color: #03228F;
+  background-color: black;
   z-index: 1;
   margin-left: 0;
   left: 24px;
@@ -1719,10 +1720,10 @@ blockquote cite:before {
   top: 12px;
   height: 4px;
   width: 12px;
-  background-color: #03228F;
+  background-color: black;
 }
 .sec-title .sub-text.new {
-  color: #ffffff;
+  color: black;
   font-size: 15px;
   padding-left: 0;
 }
@@ -1750,10 +1751,10 @@ blockquote cite:before {
   background-color: #106eea;
 }
 .sec-title .sub-text.style-bg {
-  background-color: #1273EB17;
+  background-color: #fde054;
   display: inline-block;
   padding: 6px 25px;
-  color: #1273eb;
+  color: black;
   border-radius: 30px;
   text-transform: uppercase;
 }
@@ -1810,27 +1811,27 @@ blockquote cite:before {
   font-family: 'Livvic', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #03228F;
+  color: black;
   text-transform: uppercase;
 }
 .sec-title2 .sub-text.white-color {
-  color: #ffffff;
+  color: black;
 }
 .sec-title2 .sub-text.gold-color {
   font-weight: 600;
   color: #F27C1E;
 }
 .sec-title2 .sub-text.contact {
-  color: #1273EB;
+  color: black;
 }
 .sec-title2 .sub-text.orange-color {
   color: #f2541b !important;
 }
 .sec-title2 .sub-text.style-bg {
-  background-color: #1273EB17;
+  background-color: #f9f777;
   display: inline-block;
   padding: 6px 25px;
-  color: #1273eb;
+  color:black;
   border-radius: 30px;
   text-transform: uppercase;
 }
@@ -1849,7 +1850,7 @@ blockquote cite:before {
   margin: 0 auto;
 }
 .sec-title2 .title.white-color {
-  color: #ffffff;
+  color: black;
 }
 .sec-title2 .title.testi-title {
   max-width: unset;
@@ -1884,14 +1885,14 @@ blockquote cite:before {
 }
 .sec-title2 .heading-line {
   position: relative;
-  background-color: #03228F;
+  background-color: black;
   height: 5px;
   width: 90px;
   border-radius: 30px;
   margin: 20px auto;
 }
 .sec-title2 .heading-line:before {
-  background-color: #1940AA;
+  background-color: grey;
   content: '';
   position: absolute;
   left: 0;
@@ -2166,6 +2167,7 @@ blockquote cite:before {
   position: relative;
 }
 .full-width-header .rs-header .topbar-area {
+  background-color: black;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -2183,7 +2185,7 @@ blockquote cite:before {
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part i:before {
   font-size: 26px;
-  color: #106eea;
+  color: #fde054 ;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part .contact-info {
   float: left;
@@ -2191,7 +2193,7 @@ blockquote cite:before {
   display: block;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part .contact-info span {
-  color: #0a0a0a;
+  color: white;
   display: block;
   text-align: left;
   font-size: 15px;
@@ -2201,7 +2203,7 @@ blockquote cite:before {
   margin-bottom: 0;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part .contact-info a {
-  color: #454545;
+  color: white;
   font-size: 14px;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part .contact-info a:hover {
@@ -2296,7 +2298,7 @@ blockquote cite:before {
 }
 .full-width-header .rs-header .menu-area {
   transition: all 0.3s ease;
-  background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+  background-image: linear-gradient(90deg, rgb(87, 84, 84) 10%, #ffd506  100%);
 }
 .full-width-header .rs-header .menu-area .logo-area a img {
   transition: 0.4s;
@@ -2459,7 +2461,7 @@ blockquote cite:before {
   color: #fff;
 }
 .full-width-header .rs-header .menu-area.sticky {
-  background: #fff;
+  background-color: black;
 }
 .full-width-header .rs-header .menu-area.sticky .logo-area {
   display: inline-block;
@@ -2476,10 +2478,10 @@ blockquote cite:before {
   color: #0a0a0a;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a:hover {
-  color: #106eea;
+  color: #fde054 ;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li.current-menu-item > a {
-  color: #106eea;
+  color: #f9f777;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.mega-menu {
   left: unset;
@@ -3528,7 +3530,7 @@ body .search-modal .close:hover {
     06. Banner Section CSS
 ---------------------------------------*/
 .rs-banner.main-home {
-  background: url('images/banner/banner.png');
+  background: url('images/banner/banner1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 765px;
@@ -3541,7 +3543,7 @@ body .search-modal .close:hover {
   font-size: 52px;
   line-height: 1.3;
   font-weight: 700;
-  color: black;
+  color: white;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -3549,7 +3551,7 @@ body .search-modal .close:hover {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  color: black;
+  color: white;
   margin: 0;
   padding-bottom: 40px;
 }
@@ -4004,7 +4006,7 @@ body .search-modal .close:hover {
   font-weight: 700;
   line-height: 56px;
   margin-bottom: 5px;
-  color: black;
+  color: white;
 }
 .rs-breadcrumbs .breadcrumbs-inner .page-title.new-title {
   margin: 0 auto;
@@ -4014,7 +4016,7 @@ body .search-modal .close:hover {
   padding: 0;
 }
 .rs-breadcrumbs .breadcrumbs-inner ul li {
-  color: black;
+  color: white;
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -4024,7 +4026,7 @@ body .search-modal .close:hover {
   padding-right: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: black;
+  color: white;
 }
 .rs-breadcrumbs .breadcrumbs-inner ul li a:before {
   background-color: #fff;
@@ -4037,14 +4039,14 @@ body .search-modal .close:hover {
   transform: rotate(26deg);
 }
 .rs-breadcrumbs.img1 {
-  background: url(images/breadcrumbs/about.jpg);
+  background: url(images/breadcrumbs/about1.jpg);
   background-position: center top;
 }
 .rs-breadcrumbs.img2 {
-  background: url(images/breadcrumbs/details.jpg);
+  background: url(images/breadcrumbs/details2.jpg);
 }
 .rs-breadcrumbs.img3 {
-  background: url(images/breadcrumbs/service.jpg);
+  background: url(images/breadcrumbs/service1.jpg);
 }
 .rs-breadcrumbs.img4 {
   background: url(images/breadcrumbs/team.jpg);
@@ -4730,7 +4732,7 @@ body .search-modal .close:hover {
     12. Contact Section CSS
 ---------------------------------------*/
 .rs-contact .contact-wrap {
-  background: #ffffff;
+  background: #fde054 ;
   padding: 25px 40px 50px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -4973,13 +4975,13 @@ body .search-modal .close:hover {
   width: 100%;
 }
 .rs-skillbar.style1 .cl-skill-bar .skillbar .skillbar-bar {
-  background: #106eea;
+  background: black;
   width: 0;
   margin-bottom: 0;
   height: 7px;
   line-height: 7px;
   background-color: transparent;
-  background-image: linear-gradient(190deg, #105aad 0%, #4e95ed 100%);
+  background-image: linear-gradient(190deg, black 0%, black 100%);
   background-size: 1rem 1rem;
 }
 .rs-skillbar.style1 .cl-skill-bar .skillbar .skill-bar-percent {
@@ -4999,7 +5001,7 @@ body .search-modal .close:hover {
   background-color: #DFEDFE;
 }
 .rs-skillbar.style1.modify1 .cl-skill-bar .skillbar .skillbar-bar {
-  background: #03228f;
+  background: black;
 }
 .rs-skillbar.style1.modify1 .cl-skill-bar .skillbar .skill-bar-percent {
   height: 30px;
@@ -5026,8 +5028,8 @@ body .search-modal .close:hover {
   padding: 1px;
 }
 .rs-skillbar.style1.modify2 .cl-skill-bar .skillbar .skillbar-bar {
-  background: #007bff;
-  background-image: linear-gradient(250deg, #0b70e1 19%, #03228f 100%);
+  background: black;
+  background-image: linear-gradient(250deg, black 19%, black 100%);
   height: 5px;
 }
 .rs-skillbar.style1.modify2 .cl-skill-bar .skillbar .skill-bar-percent {
@@ -5266,11 +5268,10 @@ body .search-modal .close:hover {
 .rs-team {
   background-position: center center;
   background-size: cover;
-  background-color: #000060;
+  background-color: #fde054;
 }
 .rs-team .team-item-wrap .team-wrap {
   padding: 9px 35px 25px 20px;
-  background: url(images/team/ngbng.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -5332,13 +5333,13 @@ body .search-modal .close:hover {
   border-radius: 30px;
   border: none;
   transition: all 0.3s ease;
-  background: #0B70E1;
+  background: black;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .rs-team .owl-dots .owl-dot:hover,
 .rs-team .owl-dots .owl-dot.active {
   width: 40px;
-  background: #0B70E1;
+  background: gray;
   opacity: 1;
 }
 .rs-team .owl-stage-outer {
@@ -5404,7 +5405,7 @@ body .search-modal .close:hover {
   border-radius: 270px 0px 0px 0px;
 }
 .rs-team.modify1 {
-  background: unset;
+  background-color: #fde054;
 }
 .rs-team.modify1 .team-item-wrap .team-content .person-name a {
   color: #101010;
@@ -5633,7 +5634,7 @@ body .search-modal .close:hover {
 .rs-team-Single .btm-info-team {
   position: relative;
   box-shadow: 0px 0px 32px 0px rgba(7, 28, 31, 0.05);
-  background: #fff;
+  background: #f9f777;
   margin-bottom: 70px;
   padding: 40px;
 }
@@ -5650,7 +5651,7 @@ body .search-modal .close:hover {
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
-  color: #0B70E1;
+  color: black;
   display: block;
   text-transform: uppercase;
 }
@@ -5662,12 +5663,14 @@ body .search-modal .close:hover {
   margin-bottom: 10px;
 }
 .rs-team-Single .btm-info-team .con-info .short-desc {
+  background-color: #fde054;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   color: #454545;
   margin-bottom: 25px;
-  padding-right: 50px;
 }
 .rs-team-Single .btm-info-team .con-info .ps-informations .personal-info li {
   margin: 5px 0 10px;
@@ -5675,7 +5678,7 @@ body .search-modal .close:hover {
   display: block;
 }
 .rs-team-Single .btm-info-team .con-info .ps-informations .personal-info li span i:before {
-  color: #0b70e1;
+  color: black;
   margin-right: 18px;
   position: relative;
   top: 2px;
@@ -5687,7 +5690,7 @@ body .search-modal .close:hover {
   color: #555;
 }
 .rs-team-Single .btm-info-team .con-info .ps-informations .personal-info li a:hover {
-  color: #106eea;
+  color: black;
 }
 .rs-team-Single .btm-info-team .con-info .ps-informations .social-info {
   margin-top: 15px;
@@ -5719,7 +5722,7 @@ body .search-modal .close:hover {
 .rs-services.main-home .services-item {
   margin: 0px 0px 0px 0px;
   padding: 60px 25px 50px 35px;
-  background-color: #FFFFFF;
+  background-color: #fde054;
   border-radius: 10px 10px 10px 10px;
 }
 .rs-services.main-home .services-item .services-icon {
@@ -5739,7 +5742,7 @@ body .search-modal .close:hover {
   color: #101010;
 }
 .rs-services.main-home .services-item .services-content .services-text .services-title a:hover {
-  color: #106eea;
+  color: #101010;
 }
 .rs-services.main-home .services-item .services-content .services-desc p {
   color: #444;
@@ -6315,11 +6318,11 @@ body .search-modal .close:hover {
   color: #102B3E;
 }
 .rs-services.style4.modify1 .services-item .services-content .title a:hover {
-  color: #032390;
+  color: #f9f777 ;
 }
 .rs-services.style4.modify1.services3 .services-item {
   padding: 50px 25px 33px 25px;
-  background-color: #FFFFFF;
+  background-color: #fde054 ;
   border-radius: 10px 10px 10px 10px;
   margin: 0 -10px 0 0;
 }
@@ -6502,7 +6505,7 @@ body .search-modal .close:hover {
   bottom: 150px;
 }
 .rs-services-single .services-add {
-  background-color: #000060;
+  background-color: #f9f777;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7062,7 +7065,7 @@ body .search-modal .close:hover {
   border-radius: 5px;
 }
 .rs-project.style1 .project-item .project-content {
-  background: #fff;
+  background: #fde054;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
   position: absolute;
   bottom: -60px;
@@ -8751,7 +8754,7 @@ body .search-modal .close:hover {
     29. Testimonial Section CSS
 ---------------------------------------*/
 .rs-testimonial.main-home .testi-item .author-desc {
-  background: #ffffff;
+  background: #fde054;
   padding: 70px 40px 80px 40px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: -2px 16px 44px -32px rgba(0, 0, 0, 0);
@@ -8807,13 +8810,13 @@ body .search-modal .close:hover {
   border-radius: 30px;
   border: none;
   transition: all 0.3s ease;
-  background: #0B70E1;
+  background: black;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .rs-testimonial.main-home .owl-dots .owl-dot:hover,
 .rs-testimonial.main-home .owl-dots .owl-dot.active {
   width: 40px;
-  background: #0B70E1;
+  background: black;
   opacity: 1;
 }
 .rs-testimonial.main-home .owl-stage-outer {
@@ -10056,7 +10059,7 @@ body .search-modal .close:hover {
 ------------------------------------*/
 .rs-footer {
   margin-top: 50px;
-  background-color: lightblue;
+  background-color: #f9f777;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10105,7 +10108,7 @@ body .search-modal .close:hover {
 }
 .rs-footer .footer-top .footer-social li a:hover {
   color: #ffffff;
-  background: #106eea;
+  background: #fde054;
 }
 .rs-footer .footer-top .footer-social li:last-child {
   margin: 0;
@@ -10115,13 +10118,13 @@ body .search-modal .close:hover {
   position: relative;
 }
 .rs-footer .footer-top .address-widget li .desc a {
-  color: #454545;
+  color: black;
 }
 .rs-footer .footer-top .address-widget li .desc a:hover {
-  color: #106eea;
+  color: black;
 }
 .rs-footer .footer-top .address-widget li i {
-  color: #106eea;
+  color: black;
   position: absolute;
   left: 0px;
 }
@@ -10194,7 +10197,7 @@ body .search-modal .close:hover {
 }
 .rs-footer .footer-bottom {
   padding: 20px 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: #fde054 ;
 }
 .rs-footer .footer-bottom .copyright p {
   margin: 0;
@@ -10221,7 +10224,7 @@ body .search-modal .close:hover {
   content: "";
   position: absolute;
   font-size: 18px;
-  background: #106eea;
+  background: #f9f777;
   left: 0;
   top: 50%;
   width: 6px;
@@ -10484,7 +10487,7 @@ body .search-modal .close:hover {
   border-radius: 50px 50px 4px 4px;
 }
 #scrollUp i {
-  background-image: linear-gradient(90deg, #03228f 0%, #0e73e4 100%);
+  background-image: linear-gradient(90deg, black 0%, #f9f777  100%);
   border-radius: 50%;
   height: 40px;
   font-size: 24px;

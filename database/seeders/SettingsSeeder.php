@@ -17,8 +17,6 @@ class SettingsSeeder extends Seeder
             'phone' => fake()->randomNumber(),
             'email' => fake()->email(),
             'facebook' => fake()->url(),
-            'instagram' => fake()->url(),
-            'X' => fake()->url(),
             'linkedin' => fake()->url(),
             'logo' => fake()->image(),
             'favicon' => fake()->image(),

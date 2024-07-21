@@ -26,7 +26,7 @@
                                 <img src="{{ $service->getImagePath($service->image) }}" alt="">
                             </div>
                             <h2 class="mt-34">{{ $service?->sub_heading}}</h2>
-                            <p>{{ $service?->description }}</p>
+                            <p>{!! $service?->description !!}</p>
                             <h3 class="mt-34">Why Work With Us</h3>
                              <!-- Skillbar Section Start -->
                             <div class="rs-skillbar style1 modify1">
@@ -49,12 +49,12 @@
                             <!-- Skillbar Section End -->
                            
                            
-                        <p>{{ $service->short_description }}</p>
+                        <p>{!! $service?->short_description !!}</p>
                         </div>
                         <div class="col-lg-4 pl-32 md-pl-15">
                             <ul class="services-list">
                                 @foreach($services as $service)
-                                <li><a href="{{ route('service.details',[$service->slug]) }}">{{ $service?->title }}</a></li>
+                                <li><a class="{{ request()->is('service.details',[$service->slug]) ? 'active' : '' }}" href="{{ route('service.details',[$service->slug]) }}">{{ $service?->title }}</a></li>
                                 @endforeach
                             </ul>
                             <div class="services-add mb-50 mt-50">
