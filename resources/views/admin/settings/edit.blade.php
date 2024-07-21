@@ -43,15 +43,6 @@
                               <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">Facebook</label>
                               <input type="url" name="facebook" value="{{ old('facebook', $setting->facebook) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="Facebook">
                            </div>
-                           <div class="col-md-6 mb-25">
-                              <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">Instagram</label>
-                              <input type="url" name="instagram" value="{{ old('instagram', $setting->instagram) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="Instagram">
-                           </div>
-                           <div class="col-md-6 mb-25">
-                              <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">X</label>
-                              <input type="url" name="X" value="{{ old('X', $setting->X) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="X link">
-                           </div>
-                           
 
                            <div class="col-md-6 mb-25">
                               <div class="custom-file">

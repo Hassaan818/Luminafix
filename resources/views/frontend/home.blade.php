@@ -116,8 +116,8 @@
 <div class="rs-project bg5 style1 pt-110 md-pt-80">
     <div class="container">
         <div class="sec-title2 text-center mb-45 md-mb-30">
-            <span class="sub-text white-color">Project</span>
-            <h2 class="title white-color">
+            <span class="sub-text black-color">Project</span>
+            <h2 class="title black-color">
                 Our Successfull Projects
             </h2>
         </div>

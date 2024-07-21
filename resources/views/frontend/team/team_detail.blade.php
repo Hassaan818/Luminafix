@@ -9,7 +9,7 @@
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
                             <a class="active" href="{{ route('home') }}">Home</a>
                         </li>
-                        <li title="Go to the It Technology categories archives"><a class="active" href="#">IT Technology</a></li>
+                        <li title="Go to the It Technology categories archives"><a class="active" href="{{ route('team') }}">Team</a></li>
                        <li>{{ $team?->name }}</li>
                     </ul>
                 </div>
@@ -31,7 +31,7 @@
                                     <span class="designation-info">{{$team?->job_title}} </span>
                                     <h2 class="title">{{ $team?->name}}</h2>
                                     <div class="short-desc">
-                                       {{ $team?->short_description }}
+                                       {!! $team?->short_description !!}
                                     </div>
                                     <div class="ps-informations">
                                         <ul class="personal-info">

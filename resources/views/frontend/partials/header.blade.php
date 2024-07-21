@@ -5,7 +5,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="#"><img style="width: 468px; height: 97px;" src="{{ $setting->getImagePath($setting->logo) }}" alt=""></a>
+                                        <a href="#"><img style="height: 100px;" src="{{ $setting->getImagePath($setting->logo) }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -33,7 +33,7 @@
                     <!-- Topbar Area End -->
                     
                     <!-- Menu Start -->
-                    <div class="menu-area menu-sticky">
+                    <div class="menu-area menu-sticky bg-black">
                         <div class="container">
                             <div class="logo-area">
                                 <a href="{{ route('home') }}">
