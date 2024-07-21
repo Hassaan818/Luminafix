@@ -20,10 +20,12 @@ class OurServicesController extends Controller
     public function serviceDetail($slug)
     {
         $skills = Skill::get();
+        $services = Service::orderBy('created_at')->get();
         $service = Service::where('slug', $slug)->firstOrFail();
         return view($this->serviceFrontView.'service_detail',[
             'service' => $service,
-            'skills' => $skills
+            'skills' => $skills,
+            'services' => $services
         ]);
     }
 }

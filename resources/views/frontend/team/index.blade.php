@@ -24,7 +24,7 @@
                     <div class="team-wrap">
                         <div class="image-inner">
                             @if(isset($team->image))
-                            <a href="#"><img style="height:341px; width:341px;" src="{{ $team->getImagePath($team->image) }}" alt=""></a>
+                            <a href="#"><img style="height:330px; width:330px;" src="{{ $team->getImagePath($team->image) }}" alt=""></a>
                             @endif
                         </div>
                     </div>

@@ -7,6 +7,7 @@ use App\Models\About;
 use App\Models\Category;
 use App\Models\Service;
 use App\Models\Setting;
+use App\Models\Skill;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,10 @@ class HomeController extends Controller
 {
     public function home()
     {
-    return view('frontend.home');
+        $skills = Skill::limit(5)->get();
+    return view('frontend.home',[
+        'skills' => $skills
+    ]);
     }
 
     // public function subscribe(SubscriberAddRequest $request)
