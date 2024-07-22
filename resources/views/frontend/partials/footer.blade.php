@@ -1,9 +1,5 @@
 <footer id="rs-footer" class="rs-footer">
     <div class="footer-top">
-        <div class="col-md-8 mb-25 offset-md-2">
-            @include('admin.partials.success-messages')
-            @include('admin.partials.validation-error-messages')
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
@@ -14,12 +10,16 @@
                         <p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
                     </div>
                     <ul class="footer-social md-mb-30">
+                        @if(isset($setting->facebook))
                         <li>
                             <a href="{{ $setting->facebook ?? '' }}" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
+                        @endif
+                        @if($setting->linkedin)
                         <li>
                             <a href="{{ $setting->linkedin ?? '' }}" target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
+                        @endif
                     </ul>
                 </div>
                 @php

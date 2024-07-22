@@ -26,8 +26,13 @@
                             <h2 class="title mb-15">Schedule Your Appointment</h2>
                             <p class="desc">We here to help you 24/7 with experts</p>
                         </div>
-                        <div id="appointment-messages"></div>
-                        <form id="appointment-form" method="post" action="{{ route('contact.store') }}">
+                        <div class="col-md-8 mb-25 offset-md-2">
+                        @include('admin.partials.success-messages')
+                        @include('admin.partials.validation-error-messages')
+                        </div>
+                        <form method="post" action="{{ route('subscription.store') }}">
+                        @method('post')
+                        @csrf
                             <fieldset>
                                 <div class="row">
                                     <div class="col-lg-12 mb-15">
@@ -38,6 +43,9 @@
                                     </div>
                                     <div class="col-lg-12 mb-15">
                                         <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                    </div>
+                                    <div class="col-lg-12 mb-15">
+                                        <input class="form-control" type="datetime-local" name="dateTime" id="datetime">
                                     </div>
                                 </div>
                                 <div class="form-group mb-0">

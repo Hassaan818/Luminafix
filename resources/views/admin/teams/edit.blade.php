@@ -59,7 +59,7 @@
                            </div>
                            <div class="col-md-6 mb-25">
                               <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">Twitter</label>
-                              <input type="url" name="twitter" value="{{ old('twitter', $team->twitter) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="Twitter Url">
+                              <input type="url" name="X" value="{{ old('X', $team->X) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="X Url">
                            </div>
                            <div class="col-md-6 mb-25">
                               <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">Instagram</label>

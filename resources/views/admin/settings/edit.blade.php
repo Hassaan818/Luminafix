@@ -45,6 +45,11 @@
                            </div>
 
                            <div class="col-md-6 mb-25">
+                              <label for="a1" class="il-gray fs-14 fw-500 align-center mb-10">Linkedin</label>
+                              <input type="url" name="linkedin" value="{{ old('linkedin', $setting->linkedin) }}" class="form-control ih-medium ip-gray radius-xs b-light px-15" placeholder="Linkedin">
+                           </div>
+
+                           <div class="col-md-6 mb-25">
                               <div class="custom-file">
                                  <label for="logo" class="il-gray fs-14 fw-500 align-center mb-10">Logo</label>
                                  <input class="form-control custom-file-input" type="file" name="logo" id="customFile">
