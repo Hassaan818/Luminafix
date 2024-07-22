@@ -7,7 +7,7 @@
                         <a href="#"><img src="assets/images/logo-dark.png" alt=""></a>
                     </div>
                     <div class="textwidget pb-30">
-                        <p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                        <p>All-in-One Powerhouse: Ecommerce, Branding & Marketing Experts. We Offer A Team Of Experts Under One Roof–Amazon Account Management & PPC Wizards, Website Developers, Branding Specialists, Digital Marketing Strategists, CRM & Lead Generation Experts.</p>
                     </div>
                     <ul class="footer-social md-mb-30">
                         @if(isset($setting->facebook))
