@@ -45,10 +45,10 @@
                                             </li>
                                         </ul>
                                         <ul class="social-info">
-                                            <li><a href="{{$team?->facebook}}"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="{{$team?->X}}"><i class="fa fa-twitter"></i></a></li>
+                                        @if(isset($team->facebook))<li><a href="{{$team?->facebook}}"><i class="fa fa-facebook"></i></a></li>@endif
+                                            @if(isset($team->X))<li><a href="{{$team?->X}}"><i class="fa fa-twitter"></i></a></li>@endif
                                             @if(isset($team->instagram))<li><a href="{{$team?->instagram}}"><i class="fa fa-instagram"></i></a></li>@endif
-                                            <li><a href="{{$team?->linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                                            @if(isset($team->linkedin))<li><a href="{{$team?->linkedin}}"><i class="fa fa-linkedin"></i></a></li>@endif
                                         </ul>                       
                                     </div>
                                 </div>
