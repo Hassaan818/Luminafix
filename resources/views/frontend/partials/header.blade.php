@@ -33,7 +33,7 @@
     <!-- Topbar Area End -->
 
     <!-- Menu Start -->
-    <div class="menu-area menu-sticky bg-black">
+    <div class="menu-area menu-sticky">
         <div class="container">
             <div class="logo-area">
                 <a href="{{ route('home') }}">

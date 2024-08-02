@@ -19,7 +19,7 @@ class ContactUsController extends Controller
     public function store(ContactStoreRequest $request)
     {
         $validatedData = $request->validated();
-        Mail::to('hassaankh321@gmail.com')->send(new ContactMail($validatedData));
+        Mail::to('waqar@luminafix.com')->send(new ContactMail($validatedData));
         Contact::create($validatedData);
         return to_route('contact.us')->with('message', 'Thanks for Contacting us! we will get back to you soon enough!');
     }

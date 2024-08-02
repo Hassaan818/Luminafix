@@ -29,7 +29,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Mail From Luminafix.com',
+            subject: 'Mail To Luminafix.com',
         );
     }
 
