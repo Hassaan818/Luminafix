@@ -423,7 +423,7 @@ Version: 1.0.0
         transition: all 0.3s ease 0s;
     }
     .rs-header .menu-area.menu-sticky.sticky {
-		background: #fff;
+		background: black;
 		position: fixed;
 		z-index: 999;
 		margin: 0 auto;

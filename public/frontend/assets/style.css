@@ -2475,7 +2475,7 @@ blockquote cite:before {
   float: right;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a {
-  color: #0a0a0a;
+  color: white;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a:hover {
   color: #fde054 ;

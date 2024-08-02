@@ -615,7 +615,7 @@
         display: none;
     }
     .sticky{ 
-        background: #fff !important;
+        background: black !important;
         position: fixed !important;
         top: 0px;
         z-index: 999;
